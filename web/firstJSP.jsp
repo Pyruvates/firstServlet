@@ -1,4 +1,4 @@
-<%--
+<%@ page import="java.time.LocalDate" %><%--
   Created by IntelliJ IDEA.
   User: Koshkarov Vitaliy
   Date: 11.12.2019
@@ -13,12 +13,11 @@
 <body>
     <h1>First JSP</h1>
     <p>
-        <%="Required string returned by Java"%>
+        <%="Current time:"%>
     </p>
 
     <p>
-        <% final int num = 42;%>
-        <%= "Number: " + num%>
+        <%= new java.util.Date() %>
     </p>
 </body>
 </html>
