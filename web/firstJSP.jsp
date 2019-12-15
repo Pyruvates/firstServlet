@@ -20,12 +20,5 @@
       <%@ page import="java.util.Date" %>
       <%= new Date() %>
     </p>
-    <p>
-      <%
-        String name = request.getParameter("name");
-        String surName = request.getParameter("surName");
-      %>
-      <%= "Hello, " + name + " " + surName + "!"%>
-    </p>
   </body>
 </html>
