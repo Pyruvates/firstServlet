@@ -24,6 +24,6 @@ public class FirstServlet extends HttpServlet {
     writer.println("<h2> Hello, " + name + " " + lastName + "! </h2>");
     writer.println("</html>");
 
-    response.sendRedirect("/first-jsp");
+    response.sendRedirect("http://www.google.com");
   }
 }
