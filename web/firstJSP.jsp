@@ -7,23 +7,25 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-<head>
+  <head>
     <title>First JSP</title>
-</head>
-<body>
+  </head>
+
+  <body>
     <h1>First JSP</h1>
     <p>
-        <%="Current time:"%>
+      <%="Current time:"%>
     </p>
-
     <p>
-        <%@ page import="java.util.Date" %>
-        <%= new Date() %>
+      <%@ page import="java.util.Date" %>
+      <%= new Date() %>
     </p>
-
     <p>
-        <%@ page import="logic.MyClass" %>
-        <%= new MyClass().getInfo()%>
+      <%
+        String name = request.getParameter("name");
+        String surName = request.getParameter("surName");
+      %>
+      <%= "Hello, " + name + " " + surName + "!"%>
     </p>
-</body>
+  </body>
 </html>
