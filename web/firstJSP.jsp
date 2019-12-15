@@ -1,4 +1,4 @@
-<%@ page import="java.time.LocalDate" %><%--
+<%--
   Created by IntelliJ IDEA.
   User: Koshkarov Vitaliy
   Date: 11.12.2019
@@ -17,7 +17,13 @@
     </p>
 
     <p>
-        <%= new java.util.Date() %>
+        <%@ page import="java.util.Date" %>
+        <%= new Date() %>
+    </p>
+
+    <p>
+        <%@ page import="logic.MyClass" %>
+        <%= new MyClass().getInfo()%>
     </p>
 </body>
 </html>
